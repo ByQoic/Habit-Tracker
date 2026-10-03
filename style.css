@@ -103,7 +103,12 @@ body {
 }
 
 /* ============ 5. СПИСОК ПРИВЫЧЕК ============ */
+.habits__counter {
+  font-size: 14px;
+  color: #8a8f98;
+  margin-bottom: 16px;
 
+}
 .habits__title {
   font-size: 18px;
   margin-bottom: 12px;
@@ -127,7 +132,6 @@ body {
   box-shadow: var(--shadow);
   transition: transform 0.15s;
 }
-
 .habit:hover {
   transform: translateY(-1px);
 }
@@ -181,6 +185,13 @@ body {
   padding: 20px;
   color: var(--color-muted);
   font-size: 13px;
+}
+
+.add-habit__error {
+  color: var(--color-danger);
+  font-size: 13px;
+  margin-top: 6px;
+  min-height: 18px; /* чтобы верстка не прыгала */
 }
 
 /* ============ 7. АДАПТИВНОСТЬ ============ */

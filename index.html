@@ -23,15 +23,16 @@
           class="add-habit__input"
           id="habit-input"
           placeholder="Например: не курить"
-          maxlength="50"
         >
         <button type="submit" class="add-habit__button">Добавить</button>
       </form>
+      <p class="add-habit__error" id="habit-error"></p>
     </section>
 
     <!-- Список привычек -->
     <section class="habits">
       <h2 class="habits__title">Мои привычки</h2>
+      <p class="habits__counter" id="habits-counter">Выполнено 0 из 0</p>
 
       <ul class="habits__list" id="habits-list">
         <!-- Пример привычки (позже будем добавлять через JS) -->
