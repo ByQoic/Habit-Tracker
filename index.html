@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой трекер привычек</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header__title">Мой трекер привычек</h1>
+    <p class="header__subtitle">Отмечай каждый день — и становись лучше</p>
+  </header>
+
+  <main class="main">
+
+    <!-- Форма добавления новой привычки -->
+    <section class="add-habit">
+      <form class="add-habit__form" id="habit-form">
+        <input
+          type="text"
+          class="add-habit__input"
+          id="habit-input"
+          placeholder="Например: не курить"
+          maxlength="50"
+        >
+        <button type="submit" class="add-habit__button">Добавить</button>
+      </form>
+    </section>
+
+    <!-- Список привычек -->
+    <section class="habits">
+      <h2 class="habits__title">Мои привычки</h2>
+
+      <ul class="habits__list" id="habits-list">
+        <!-- Пример привычки (позже будем добавлять через JS) -->
+        <li class="habit">
+          <label class="habit__label">
+            <input type="checkbox" class="habit__checkbox">
+            <span class="habit__name">Читать 10 страниц</span>
+          </label>
+          <button class="habit__delete" aria-label="Удалить привычку">×</button>
+        </li>
+
+        <li class="habit">
+          <label class="habit__label">
+            <input type="checkbox" class="habit__checkbox">
+            <span class="habit__name">Зарядка утром</span>
+          </label>
+          <button class="habit__delete" aria-label="Удалить привычку">×</button>
+        </li>
+
+        <li class="habit">
+          <label class="habit__label">
+            <input type="checkbox" class="habit__checkbox">
+            <span class="habit__name">Изучить Frontend каждый день по часу</span>
+          </label>
+          <button class="habit__delete" aria-label="Удалить привычку">×</button>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">Сделано с ❤️ для практики</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
